@@ -472,7 +472,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="bg-[url('/bgmobile.jpg')] md:bg-[url('/bg.jpg')] bg-cover bg-no-repeat bg-top">
+      <div className="bg-[url('/img/bgmobile.jpg')] md:bg-[url('/img/bg.jpg')] bg-cover bg-no-repeat bg-top">
         <div className="container m-auto px-10 pt-10 pb-16">
           <div className="items-center justify-center text-center">
             <img

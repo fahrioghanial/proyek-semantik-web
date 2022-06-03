@@ -5,7 +5,9 @@ export default function AllTimeTable(props) {
     <div
       className={`flex ${
         result.rank == 11 ? "border-b-2 border-black rounded-b-xl" : ""
-      } ${result.rank % 2 == 0 ? "bg-slate-100" : ""} md:text-xl`}
+      } ${
+        result.rank % 2 == 0 ? "bg-slate-100" : ""
+      } md:text-xl text-sm md:text-base`}
       key={result.id}
     >
       <div
@@ -15,7 +17,7 @@ export default function AllTimeTable(props) {
       >
         {result.rank}
       </div>
-      <div className="w-1/3 p-2 border-r-2 border-black flex items-center gap-2">
+      <div className="w-1/3 p-2 border-r-2 border-black flex items-center gap-2 flex-col md:flex-row">
         <img
           src={`/img/bendera/${result.country_name}.png`}
           title={result.country_name}
