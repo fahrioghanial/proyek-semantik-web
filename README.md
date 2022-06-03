@@ -30,3 +30,4 @@ This repository is a final project from Semantic Web Class, Teknik Informatika U
 
 ## Tampilan Aplikasi
 ![ss](public/img/Screenshot.png)
+![ss2](public/img/Screenshot2.png)
