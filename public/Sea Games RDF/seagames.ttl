@@ -1,0 +1,913 @@
+@prefix : <http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9> .
+
+<http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9#host_cities
+:host_cities rdf:type owl:ObjectProperty ;
+             rdfs:domain :Edition ;
+             rdfs:range :City .
+
+
+###  http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9#host_country
+:host_country rdf:type owl:ObjectProperty ;
+              rdfs:domain :Edition ;
+              rdfs:range :Country .
+
+
+###  http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9#runner_up
+:runner_up rdf:type owl:ObjectProperty ;
+           rdfs:domain :Edition ;
+           rdfs:range :Country .
+
+
+###  http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9#third_place
+:third_place rdf:type owl:ObjectProperty ;
+             rdfs:domain :Edition ;
+             rdfs:range :Country .
+
+
+###  http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9#winner
+:winner rdf:type owl:ObjectProperty ;
+        rdfs:domain :Edition ;
+        rdfs:range :Country .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9#city_name
+:city_name rdf:type owl:DatatypeProperty ;
+           rdfs:domain :City ;
+           rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9#competitors
+:competitors rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Edition ;
+             rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9#country_name
+:country_name rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Country ;
+              rdfs:range xsd:string .
+
+###  http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9#country_name
+:debuted rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Country ;
+              rdfs:range xsd:string .
+
+###  http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9#country_name
+:gold rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Country ;
+              rdfs:range xsd:string .
+
+###  http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9#country_name
+:silver rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Country ;
+              rdfs:range xsd:string .
+
+###  http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9#country_name
+:bronze rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Country ;
+              rdfs:range xsd:string .
+
+###  http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9#country_name
+:total_medal rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Country ;
+              rdfs:range xsd:string .
+
+###  http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9#country_name
+:rank rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Country ;
+              rdfs:range xsd:integer .
+
+###  http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9#date
+:date rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Edition ;
+      rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9#events
+:events rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Edition ;
+        rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9#games
+:games rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Edition ;
+       rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9#nations
+:nations rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Edition ;
+         rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9#opened_by
+:opened_by rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Edition ;
+           rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9#sports
+:sports rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Edition ;
+        rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9#year
+:year rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Edition ;
+      rdfs:range xsd:integer .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9#City
+:City rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9#Country
+:Country rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9#Edition
+:Edition rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9#city1
+:city1 rdf:type owl:NamedIndividual ,
+                :City ;
+       :city_name "Bandar Seri Begawan"^^xsd:string .
+
+
+###  http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9#city10
+:city10 rdf:type owl:NamedIndividual ,
+                 :City ;
+        :city_name "Singapore"^^xsd:string .
+
+
+###  http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9#city11
+:city11 rdf:type owl:NamedIndividual ,
+                 :City ;
+        :city_name "Bangkok"^^xsd:string .
+
+
+###  http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9#city12
+:city12 rdf:type owl:NamedIndividual ,
+                 :City ;
+        :city_name "Chiang Mai"^^xsd:string .
+
+
+###  http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9#city13
+:city13 rdf:type owl:NamedIndividual ,
+                 :City ;
+        :city_name "Nakhon Ratchasima"^^xsd:string .
+
+
+###  http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9#city14
+:city14 rdf:type owl:NamedIndividual ,
+                 :City ;
+        :city_name "Hanoi"^^xsd:string .
+
+
+###  http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9#city15
+:city15 rdf:type owl:NamedIndividual ,
+                 :City ;
+        :city_name "Hanoi & Ho Chi Minh City"^^xsd:string .
+
+###  http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9#city16
+:city16 rdf:type owl:NamedIndividual ,
+                 :City ;
+        :city_name "Clark"^^xsd:string .
+
+###  http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9#city2
+:city2 rdf:type owl:NamedIndividual ,
+                :City ;
+       :city_name "Phnom Penh"^^xsd:string .
+
+
+###  http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9#city3
+:city3 rdf:type owl:NamedIndividual ,
+                :City ;
+       :city_name "Jakarta"^^xsd:string .
+
+
+###  http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9#city4
+:city4 rdf:type owl:NamedIndividual ,
+                :City ;
+       :city_name "Jakarta & Palembang"^^xsd:string .
+
+
+###  http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9#city5
+:city5 rdf:type owl:NamedIndividual ,
+                :City ;
+       :city_name "Vientiane"^^xsd:string .
+
+
+###  http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9#city6
+:city6 rdf:type owl:NamedIndividual ,
+                :City ;
+       :city_name "Kuala Lumpur"^^xsd:string .
+
+
+###  http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9#city7
+:city7 rdf:type owl:NamedIndividual ,
+                :City ;
+       :city_name "Naypyidaw"^^xsd:string .
+
+
+###  http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9#city8
+:city8 rdf:type owl:NamedIndividual ,
+                :City ;
+       :city_name "Yangon"^^xsd:string .
+
+
+###  http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9#city9
+:city9 rdf:type owl:NamedIndividual ,
+                :City ;
+       :city_name "Manila"^^xsd:string .
+
+
+###  http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9#country1
+:country1 rdf:type owl:NamedIndividual ,
+                   :Country ;
+          :country_name "Brunei Darussalam"^^xsd:string ;
+          :debuted "1977"^^xsd:string ;
+          :gold "15"^^xsd:string ;
+          :silver "56"^^xsd:string ;
+          :bronze "164"^^xsd:string ;
+          :total_medal "235"^^xsd:string ;
+          :rank 10 .
+
+
+###  http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9#country10
+:country10 rdf:type owl:NamedIndividual ,
+                    :Country ;
+           :country_name "Timor Leste"^^xsd:string ;
+          :debuted "2003"^^xsd:string ;
+          :gold "3"^^xsd:string ;
+          :silver "9"^^xsd:string ;
+          :bronze "28"^^xsd:string ;
+          :total_medal "40"^^xsd:string ;
+          :rank 11 .
+
+
+###  http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9#country11
+:country11 rdf:type owl:NamedIndividual ,
+                    :Country ;
+           :country_name "Vietnam"^^xsd:string ;
+          :debuted "1959"^^xsd:string ;
+          :gold "1133"^^xsd:string ;
+          :silver "992"^^xsd:string ;
+          :bronze "1107"^^xsd:string ;
+          :total_medal "3232"^^xsd:string ;
+          :rank 4 .
+
+
+###  http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9#country2
+:country2 rdf:type owl:NamedIndividual ,
+                   :Country ;
+          :country_name "Cambodia"^^xsd:string ;
+          :debuted "1961"^^xsd:string ;
+          :gold "78"^^xsd:string ;
+          :silver "128"^^xsd:string ;
+          :bronze "299"^^xsd:string ;
+          :total_medal "505"^^xsd:string ;
+          :rank 8 .
+
+
+###  http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9#country3
+:country3 rdf:type owl:NamedIndividual ,
+                   :Country ;
+          :country_name "Indonesia"^^xsd:string ;
+          :debuted "1977"^^xsd:string ;
+          :gold "1893"^^xsd:string ;
+          :silver "1794"^^xsd:string ;
+          :bronze "1861"^^xsd:string ;
+          :total_medal "5548"^^xsd:string ;
+          :rank 2 .
+
+
+###  http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9#country4
+:country4 rdf:type owl:NamedIndividual ,
+                   :Country ;
+          :country_name "Laos"^^xsd:string ;
+          :debuted "1959"^^xsd:string ;
+          :gold "71"^^xsd:string ;
+          :silver "100"^^xsd:string ;
+          :bronze "352"^^xsd:string ;
+          :total_medal "523"^^xsd:string ;
+          :rank 9 .
+
+
+###  http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9#country5
+:country5 rdf:type owl:NamedIndividual ,
+                   :Country ;
+          :country_name "Malaysia"^^xsd:string ;
+          :debuted "1959"^^xsd:string ;
+          :gold "1342"^^xsd:string ;
+          :silver "1318"^^xsd:string ;
+          :bronze "1775"^^xsd:string ;
+          :total_medal "4435"^^xsd:string ;
+          :rank 3 .
+
+
+###  http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9#country6
+:country6 rdf:type owl:NamedIndividual ,
+                   :Country ;
+          :country_name "Myanmar"^^xsd:string ;
+          :debuted "1959"^^xsd:string ;
+          :gold "573"^^xsd:string ;
+          :silver "759"^^xsd:string ;
+          :bronze "1027"^^xsd:string ;
+          :total_medal "2359"^^xsd:string ;
+          :rank 7 .
+
+
+###  http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9#country7
+:country7 rdf:type owl:NamedIndividual ,
+                   :Country ;
+          :country_name "Philippines"^^xsd:string ;
+          :debuted "1977"^^xsd:string ;
+          :gold "1122"^^xsd:string ;
+          :silver "1260"^^xsd:string ;
+          :bronze "1586"^^xsd:string ;
+          :total_medal "3968"^^xsd:string ;
+          :rank 5 .
+
+
+###  http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9#country8
+:country8 rdf:type owl:NamedIndividual ,
+                   :Country ;
+          :country_name "Singapore"^^xsd:string ;
+          :debuted "1959"^^xsd:string ;
+          :gold "994"^^xsd:string ;
+          :silver "1048"^^xsd:string ;
+          :bronze "1436"^^xsd:string ;
+          :total_medal "3478"^^xsd:string ;
+          :rank 6 .
+
+
+###  http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9#country9
+:country9 rdf:type owl:NamedIndividual ,
+                   :Country ;
+          :country_name "Thailand"^^xsd:string ;
+          :debuted "1959"^^xsd:string ;
+          :gold "2345"^^xsd:string ;
+          :silver "2031"^^xsd:string ;
+          :bronze "2096"^^xsd:string ;
+          :total_medal "6472"^^xsd:string ;
+          :rank 1 .
+
+
+###  http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9#edition1
+:edition1 rdf:type owl:NamedIndividual ,
+                   :Edition ;
+          :host_cities :city11 ;
+          :host_country :country9 ;
+          :runner_up :country6 ;
+          :third_place :country5 ;
+          :winner :country9 ;
+          :competitors "518"^^xsd:string ;
+          :date "12–17 December 1959"^^xsd:string ;
+          :events "N/A"^^xsd:string ;
+          :games 1 ;
+          :nations "6 "^^xsd:string;
+          :opened_by "King Bhumibol Adulyadej"^^xsd:string ;
+          :sports "12"^^xsd:string ;
+          :year "1959"^^xsd:string .
+
+
+###  http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9#edition2
+:edition2 rdf:type owl:NamedIndividual ,
+                   :Edition ;
+          :host_cities :city8 ;
+          :host_country :country6 ;
+          :winner :country6 ;
+          :runner_up :country9 ;
+          :third_place :country5 ;
+          :games 2 ;
+          :year "1961"^^xsd:string ;
+          :opened_by "President Win Maung"^^xsd:string ;
+          :date "11–16 December 1961"^^xsd:string ;
+          :sports "13"^^xsd:string ;
+          :events "N/A"^^xsd:string ;
+          :nations "7 "^^xsd:string;
+          :competitors "623"^^xsd:string .
+
+###  http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9#edition3
+:edition3 rdf:type owl:NamedIndividual ,
+                   :Edition ;
+          :host_cities :city6 ;
+          :host_country :country5 ;
+          :winner :country9 ;
+          :runner_up :country5 ;
+          :third_place :country8 ;
+          :games 3 ;
+          :year "1965"^^xsd:string ;
+          :opened_by "Yang di-Pertuan Agong Ismail Nasiruddin"^^xsd:string ;
+          :date "14–21 December 1965"^^xsd:string ;
+          :sports "14"^^xsd:string ;
+          :events "N/A"^^xsd:string ;
+          :nations "7 "^^xsd:string;
+          :competitors "963"^^xsd:string .
+
+###  http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9#edition4
+:edition4 rdf:type owl:NamedIndividual ,
+                   :Edition ;
+          :host_cities :city11 ;
+          :host_country :country9 ;
+          :winner :country9 ;
+          :runner_up :country8 ;
+          :third_place :country5 ;
+          :games 4 ;
+          :year "1967"^^xsd:string ;
+          :opened_by "King Bhumibol Adulyadej"^^xsd:string ;
+          :date "9–16 December 1967"^^xsd:string ;
+          :sports "16"^^xsd:string ;
+          :events "N/A"^^xsd:string ;
+          :nations "6 "^^xsd:string;
+          :competitors "984"^^xsd:string .
+
+###  http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9#edition5
+:edition5 rdf:type owl:NamedIndividual ,
+                   :Edition ;
+          :host_cities :city8 ;
+          :host_country :country6 ;
+          :winner :country6 ;
+          :runner_up :country9 ;
+          :third_place :country8 ;
+          :games 5 ;
+          :year "1969"^^xsd:string ;
+          :opened_by "Prime Minister Ne Win"^^xsd:string ;
+          :date "6–13 December 1969"^^xsd:string ;
+          :sports "15"^^xsd:string ;
+          :events "N/A"^^xsd:string ;
+          :nations "6 "^^xsd:string;
+          :competitors "920"^^xsd:string .
+
+###  http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9#edition6
+:edition6 rdf:type owl:NamedIndividual ,
+                   :Edition ;
+          :host_cities :city6 ;
+          :host_country :country5 ;
+          :winner :country9 ;
+          :runner_up :country5 ;
+          :third_place :country8 ;
+          :games 6 ;
+          :year "1971"^^xsd:string ;
+          :opened_by "Yang di-Pertuan Agong Abdul Halim"^^xsd:string ;
+          :date "6–13 December 1971"^^xsd:string ;
+          :sports "15"^^xsd:string ;
+          :events "N/A"^^xsd:string ;
+          :nations "7 "^^xsd:string;
+          :competitors "957"^^xsd:string .
+
+###  http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9#edition7
+:edition7 rdf:type owl:NamedIndividual ,
+                   :Edition ;
+          :host_cities :city10 ;
+          :host_country :country8 ;
+          :winner :country9 ;
+          :runner_up :country8 ;
+          :third_place :country5 ;
+          :games 7 ;
+          :year "1973"^^xsd:string ;
+          :opened_by "President Benjamin Sheares"^^xsd:string ;
+          :date "1–8 September 1973"^^xsd:string ;
+          :sports "16"^^xsd:string ;
+          :events "N/A"^^xsd:string ;
+          :nations "7 "^^xsd:string;
+          :competitors "1632"^^xsd:string .
+
+###  http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9#edition8
+:edition8 rdf:type owl:NamedIndividual ,
+                   :Edition ;
+          :host_cities :city11 ;
+          :host_country :country9 ;
+          :winner :country9 ;
+          :runner_up :country8 ;
+          :third_place :country6 ;
+          :games 8 ;
+          :year "1975"^^xsd:string ;
+          :opened_by "King Bhumibol Adulyadej"^^xsd:string ;
+          :date "9–16 December 1975"^^xsd:string ;
+          :sports "18"^^xsd:string ;
+          :events "N/A"^^xsd:string ;
+          :nations "4 "^^xsd:string;
+          :competitors "1142"^^xsd:string .
+
+###  http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9#edition9
+:edition9 rdf:type owl:NamedIndividual ,
+                   :Edition ;
+          :host_cities :city6 ;
+          :host_country :country5 ;
+          :winner :country3 ;
+          :runner_up :country9 ;
+          :third_place :country7 ;
+          :games 9 ;
+          :year "1977"^^xsd:string ;
+          :opened_by "Yang di-Pertuan Agong Yahya Petra"^^xsd:string ;
+          :date "19–26 November 1977"^^xsd:string ;
+          :sports "18"^^xsd:string ;
+          :events "N/A"^^xsd:string ;
+          :nations "7 "^^xsd:string;
+          :competitors "N/A"^^xsd:string .
+
+###  http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9#edition10
+:edition10 rdf:type owl:NamedIndividual ,
+                   :Edition ;
+          :host_cities :city3 ;
+          :host_country :country3 ;
+          :winner :country3 ;
+          :runner_up :country9 ;
+          :third_place :country6 ;
+          :games 10 ;
+          :year "1979"^^xsd:string ;
+          :opened_by "President Suharto"^^xsd:string ;
+          :date "21–30 September 1979"^^xsd:string ;
+          :sports "18"^^xsd:string ;
+          :events "N/A"^^xsd:string ;
+          :nations "7 "^^xsd:string;
+          :competitors "N/A"^^xsd:string .
+
+###  http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9#edition11
+:edition11 rdf:type owl:NamedIndividual ,
+                   :Edition ;
+          :host_cities :city9 ;
+          :host_country :country7 ;
+          :winner :country3 ;
+          :runner_up :country9 ;
+          :third_place :country7 ;
+          :games 11 ;
+          :year "1981"^^xsd:string ;
+          :opened_by "President Ferdinand Marcos"^^xsd:string ;
+          :date "6–15 December 1981"^^xsd:string ;
+          :sports "18"^^xsd:string ;
+          :events "N/A"^^xsd:string ;
+          :nations "7 "^^xsd:string;
+          :competitors "≈1800"^^xsd:string .
+
+###  http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9#edition12
+:edition12 rdf:type owl:NamedIndividual ,
+                   :Edition ;
+          :host_cities :city10 ;
+          :host_country :country8 ;
+          :winner :country3 ;
+          :runner_up :country7 ;
+          :third_place :country9 ;
+          :games 12 ;
+          :year "1983"^^xsd:string ;
+          :opened_by "President Devan Nair"^^xsd:string ;
+          :date "28 May – 6 June 1983"^^xsd:string ;
+          :sports "18"^^xsd:string ;
+          :events "N/A"^^xsd:string ;
+          :nations "8 "^^xsd:string;
+          :competitors "N/A"^^xsd:string .
+
+###  http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9#edition13
+:edition13 rdf:type owl:NamedIndividual ,
+                   :Edition ;
+          :host_cities :city11 ;
+          :host_country :country9 ;
+          :winner :country9 ;
+          :runner_up :country3 ;
+          :third_place :country7 ;
+          :games 13 ;
+          :year "1985"^^xsd:string ;
+          :opened_by "King Bhumibol Adulyadej"^^xsd:string ;
+          :date "8–17 December 1985"^^xsd:string ;
+          :sports "18"^^xsd:string ;
+          :events "N/A"^^xsd:string ;
+          :nations "8 "^^xsd:string;
+          :competitors "N/A"^^xsd:string .
+
+###  http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9#edition14
+:edition14 rdf:type owl:NamedIndividual ,
+                   :Edition ;
+          :host_cities :city3 ;
+          :host_country :country3 ;
+          :winner :country3 ;
+          :runner_up :country9 ;
+          :third_place :country7 ;
+          :games 14 ;
+          :year "1987"^^xsd:string ;
+          :opened_by "President Suharto"^^xsd:string ;
+          :date "9–20 September 1987"^^xsd:string ;
+          :sports "26"^^xsd:string ;
+          :events "N/A"^^xsd:string ;
+          :nations "8 "^^xsd:string;
+          :competitors "N/A"^^xsd:string .
+
+###  http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9#edition15
+:edition15 rdf:type owl:NamedIndividual ,
+                   :Edition ;
+          :host_cities :city6 ;
+          :host_country :country5 ;
+          :winner :country3 ;
+          :runner_up :country5 ;
+          :third_place :country9 ;
+          :games 15 ;
+          :year "1989"^^xsd:string ;
+          :opened_by "Yang di-Pertuan Agong Azlan Shah"^^xsd:string ;
+          :date "20–31 August 1989"^^xsd:string ;
+          :sports "24"^^xsd:string ;
+          :events "N/A"^^xsd:string ;
+          :nations "9 "^^xsd:string;
+          :competitors "≈2800"^^xsd:string .
+
+###  http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9#edition16
+:edition16 rdf:type owl:NamedIndividual ,
+                   :Edition ;
+          :host_cities :city9 ;
+          :host_country :country7 ;
+          :winner :country3 ;
+          :runner_up :country7 ;
+          :third_place :country9 ;
+          :games 16 ;
+          :year "1991"^^xsd:string ;
+          :opened_by "President Corazon Aquino"^^xsd:string ;
+          :date "24 November – 3 December 1991"^^xsd:string ;
+          :sports "28"^^xsd:string ;
+          :events "N/A"^^xsd:string ;
+          :nations "9 "^^xsd:string;
+          :competitors "N/A"^^xsd:string .
+
+###  http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9#edition17
+:edition17 rdf:type owl:NamedIndividual ,
+                   :Edition ;
+          :host_cities :city10 ;
+          :host_country :country8 ;
+          :winner :country3 ;
+          :runner_up :country9 ;
+          :third_place :country7 ;
+          :games 17 ;
+          :year "1993"^^xsd:string ;
+          :opened_by "President Wee Kim Wee"^^xsd:string ;
+          :date "12–20 June 1993"^^xsd:string ;
+          :sports "29"^^xsd:string ;
+          :events "N/A"^^xsd:string ;
+          :nations "9 "^^xsd:string;
+          :competitors "≈3000"^^xsd:string .
+
+###  http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9#edition18
+:edition18 rdf:type owl:NamedIndividual ,
+                   :Edition ;
+          :host_cities :city12 ;
+          :host_country :country9 ;
+          :winner :country9 ;
+          :runner_up :country3 ;
+          :third_place :country7 ;
+          :games 18 ;
+          :year "1995"^^xsd:string ;
+          :opened_by "Crown Prince Vajiralongkorn"^^xsd:string ;
+          :date "9–17 December 1995"^^xsd:string ;
+          :sports "28"^^xsd:string ;
+          :events "N/A"^^xsd:string ;
+          :nations "10"^^xsd:string ;
+          :competitors "3262"^^xsd:string .
+
+###  http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9#edition19
+:edition19 rdf:type owl:NamedIndividual ,
+                   :Edition ;
+          :host_cities :city3 ;
+          :host_country :country3 ;
+          :winner :country3 ;
+          :runner_up :country9 ;
+          :third_place :country5 ;
+          :games 19 ;
+          :year "1997"^^xsd:string ;
+          :opened_by "President Suharto"^^xsd:string ;
+          :date "11–19 October 1997"^^xsd:string ;
+          :sports "36"^^xsd:string ;
+          :events "490"^^xsd:string ;
+          :nations "10"^^xsd:string ;
+          :competitors "5179"^^xsd:string .
+
+###  http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9#edition20
+:edition20 rdf:type owl:NamedIndividual ,
+                   :Edition ;
+          :host_cities :city1 ;
+          :host_country :country1 ;
+          :winner :country9 ;
+          :runner_up :country5 ;
+          :third_place :country3 ;
+          :games 20 ;
+          :year "1999"^^xsd:string ;
+          :opened_by "Sultan Hassanal Bolkiah"^^xsd:string ;
+          :date "7–15 August 1999"^^xsd:string ;
+          :sports "21"^^xsd:string ;
+          :events "233"^^xsd:string ;
+          :nations "10"^^xsd:string ;
+          :competitors "2365"^^xsd:string .
+
+###  http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9#edition21
+:edition21 rdf:type owl:NamedIndividual ,
+                   :Edition ;
+          :host_cities :city6 ;
+          :host_country :country5 ;
+          :winner :country5 ;
+          :runner_up :country9 ;
+          :third_place :country3 ;
+          :games 21 ;
+          :year "2001"^^xsd:string ;
+          :opened_by "Yang di-Pertuan Agong Salahuddin"^^xsd:string ;
+          :date "8–17 September 2001"^^xsd:string ;
+          :sports "32"^^xsd:string ;
+          :events "391"^^xsd:string ;
+          :nations "10"^^xsd:string ;
+          :competitors "4165"^^xsd:string .
+
+###  http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9#edition22
+:edition22 rdf:type owl:NamedIndividual ,
+                   :Edition ;
+          :host_cities :city15 ;
+          :host_country :country11 ;
+          :winner :country11 ;
+          :runner_up :country9 ;
+          :third_place :country3 ;
+          :games 22 ;
+          :year "2003"^^xsd:string ;
+          :opened_by "Prime Minister Phan Văn Khải"^^xsd:string ;
+          :date "5–13 December 2003"^^xsd:string ;
+          :sports "32"^^xsd:string ;
+          :events "442"^^xsd:string ;
+          :nations "11"^^xsd:string ;
+          :competitors "≈5000"^^xsd:string .
+
+###  http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9#edition23
+:edition23 rdf:type owl:NamedIndividual ,
+                   :Edition ;
+          :host_cities :city9 ;
+          :host_country :country7 ;
+          :winner :country7 ;
+          :runner_up :country9 ;
+          :third_place :country11 ;
+          :games 23 ;
+          :year "2005"^^xsd:string ;
+          :opened_by "President Gloria Macapagal Arroyo"^^xsd:string ;
+          :date "27 November – 5 December 2005"^^xsd:string ;
+          :sports "40"^^xsd:string ;
+          :events "443"^^xsd:string ;
+          :nations "11"^^xsd:string ;
+          :competitors "5336"^^xsd:string .
+
+###  http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9#edition24
+:edition24 rdf:type owl:NamedIndividual ,
+                   :Edition ;
+          :host_cities :city13 ;
+          :host_country :country9 ;
+          :winner :country9 ;
+          :runner_up :country5 ;
+          :third_place :country11 ;
+          :games 24 ;
+          :year "2007"^^xsd:string ;
+          :opened_by "Crown Prince Vajiralongkorn"^^xsd:string ;
+          :date "6–15 December 2007"^^xsd:string ;
+          :sports "43"^^xsd:string ;
+          :events "475"^^xsd:string ;
+          :nations "11"^^xsd:string ;
+          :competitors "5282"^^xsd:string .
+
+###  http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9#edition25
+:edition25 rdf:type owl:NamedIndividual ,
+                   :Edition ;
+          :host_cities :city5 ;
+          :host_country :country4 ;
+          :winner :country9 ;
+          :runner_up :country11 ;
+          :third_place :country3 ;
+          :games 25 ;
+          :year "2009"^^xsd:string ;
+          :opened_by "President Choummaly Sayasone"^^xsd:string ;
+          :date "9–18 December 2009"^^xsd:string ;
+          :sports "29"^^xsd:string ;
+          :events "372"^^xsd:string ;
+          :nations "11"^^xsd:string ;
+          :competitors "3100"^^xsd:string .
+
+###  http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9#edition26
+:edition26 rdf:type owl:NamedIndividual ,
+                   :Edition ;
+          :host_cities :city4 ;
+          :host_country :country3 ;
+          :winner :country3 ;
+          :runner_up :country9 ;
+          :third_place :country11 ;
+          :games 26 ;
+          :year "2011"^^xsd:string ;
+          :opened_by "President Susilo Bambang Yudhoyono"^^xsd:string ;
+          :date "11–22 November 2011"^^xsd:string ;
+          :sports "44"^^xsd:string ;
+          :events "545"^^xsd:string ;
+          :nations "11"^^xsd:string ;
+          :competitors "5965"^^xsd:string .
+
+###  http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9#edition27
+:edition27 rdf:type owl:NamedIndividual ,
+                   :Edition ;
+          :host_cities :city7 ;
+          :host_country :country6 ;
+          :winner :country9 ;
+          :runner_up :country6 ;
+          :third_place :country11 ;
+          :games 27 ;
+          :year "2013"^^xsd:string ;
+          :opened_by "Vice President Nyan Tun"^^xsd:string ;
+          :date "11–22 December 2013"^^xsd:string ;
+          :sports "37"^^xsd:string ;
+          :events "460"^^xsd:string ;
+          :nations "11"^^xsd:string ;
+          :competitors "4730"^^xsd:string .
+
+###  http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9#edition28
+:edition28 rdf:type owl:NamedIndividual ,
+                   :Edition ;
+          :host_cities :city10 ;
+          :host_country :country8 ;
+          :winner :country9 ;
+          :runner_up :country8 ;
+          :third_place :country11 ;
+          :games 28 ;
+          :year "2015"^^xsd:string ;
+          :opened_by "President Tony Tan"^^xsd:string ;
+          :date "5–16 June 2015"^^xsd:string ;
+          :sports "36"^^xsd:string ;
+          :events "402"^^xsd:string ;
+          :nations "11"^^xsd:string ;
+          :competitors "4370"^^xsd:string .
+
+###  http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9#edition29
+:edition29 rdf:type owl:NamedIndividual ,
+                   :Edition ;
+          :host_cities :city6 ;
+          :host_country :country5 ;
+          :winner :country5 ;
+          :runner_up :country9 ;
+          :third_place :country11 ;
+          :games 29 ;
+          :year "2017"^^xsd:string ;
+          :opened_by "Yang di-Pertuan Agong Muhammad V"^^xsd:string ;
+          :date "19–30 August 2017"^^xsd:string ;
+          :sports "38"^^xsd:string ;
+          :events "404"^^xsd:string ;
+          :nations "11"^^xsd:string ;
+          :competitors "4709"^^xsd:string .
+
+###  http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9#edition30
+:edition30 rdf:type owl:NamedIndividual ,
+                   :Edition ;
+          :host_cities :city16 ;
+          :host_country :country7 ;
+          :winner :country7 ;
+          :runner_up :country11 ;
+          :third_place :country9 ;
+          :games 30 ;
+          :year "2019"^^xsd:string ;
+          :opened_by "President Rodrigo Duterte"^^xsd:string ;
+          :date "30 November – 11 December 2019"^^xsd:string ;
+          :sports "56"^^xsd:string ;
+          :events "530"^^xsd:string ;
+          :nations "11"^^xsd:string ;
+          :competitors "5630"^^xsd:string .
+
+###  http://www.semanticweb.org/acer/ontologies/2022/4/untitled-ontology-9#edition31
+:edition31 rdf:type owl:NamedIndividual ,
+                   :Edition ;
+          :host_cities :city14 ;
+          :host_country :country11 ;
+          :winner :country11 ;
+          :runner_up :country9 ;
+          :third_place :country3 ;
+          :games 31 ;
+          :year "2021"^^xsd:string ;
+          :opened_by "President Nguyễn Xuân Phúc"^^xsd:string ;
+          :date "12–23 May 2022"^^xsd:string ;
+          :sports "40"^^xsd:string ;
+          :events "526"^^xsd:string ;
+          :nations "11"^^xsd:string ;
+          :competitors "5467"^^xsd:string .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
