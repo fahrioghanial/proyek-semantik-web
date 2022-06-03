@@ -27,3 +27,6 @@ This repository is a final project from Semantic Web Class, Teknik Informatika U
     npm start
     ```
 7. Aplikasi dapat dibuka di browser pada http://localhost:3000/
+
+## Tampilan Aplikasi
+![ss](public/img/Screenshot.png)
